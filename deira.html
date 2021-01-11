@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deira Framework</title>
-    <link rel="stylesheet" href="deira_framework.css" />
+    <link rel="stylesheet" href="deira_fonts.css" />
+    <link rel="stylesheet" href="deira_themes.css">
   </head>
   <body class="grid-template-one">
     <header class="header">
@@ -15,13 +16,15 @@
       <section id="introduction">
         <h2>Introduction</h2>
         <p>
-          Welcome to the Deira framework! The primary goal of this framework is
-          to give a web developer robust use of CSS Grid, Flexbox and variables
-          to create dynamic, mobile first websites.
+          Welcome to the Deira framework colleciton. This collection
+          is to give you a series of small CSS libraries that are grouped by subject 
+          and make full use of CSS Variables. The ho
         </p>
-      </section>
-      <section id="variables">
-        <h2>Variables</h2>
+        <p>
+          The idea behind this is to save you trawling through 100s of lines of
+          CSS to change that style of one class when you can set your defaults
+          to be exactly as you want it to be.
+        </p>
       </section>
 
       <section>
@@ -35,7 +38,7 @@
         <p></p>
         <h3>Template One</h3>
         <p>Technology: CSS Grid</p>
-        <p>
+        <p class="cat">
           A basic 3 row template consisting of a header, main and footer. The
           template uses auto sizing for the header and footer to ensure their
           height will only ever be for the content. The main section is set to
@@ -55,7 +58,19 @@
           &lt;/footer&gt; <br />
         </code>
       </section>
+      <section>
+        <h2>Color Switcher</h2>
+        <div class="color-switcher">
+          <span class="color-toggle left"></span>
+        </div>
+        <article class="bgcolor-light-two">
+          <h2 class="color-light-one">I change color!</h2>
+          <p class="color-light-three">And so do I!</p>
+        </article>
+      </section>
     </main>
     <footer class="footer"></footer>
+
+    <script src="deira_themes.js"></script>
   </body>
 </html>

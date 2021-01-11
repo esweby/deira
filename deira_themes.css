@@ -1,0 +1,78 @@
+:root {
+    /* Button Colors */
+    --themeSwitcher-border-color: #434546;
+    --themeSwitcher-bg-color: gainsboro;
+    --themeSwitcher-marker-color: red;
+
+    /* Light Mode Colours */
+    --light-color-one: #000;
+    --light-color-two: #fff;
+    --light-color-three: #80b8e9;
+    --light-color-four: #141618;
+    --light-color-five: #434546;
+
+    /* Dark Mode Colours */
+    --dark-color-one: #f4f8f1;
+    --dark-color-two: #000;
+    --dark-color-three: #f4f8f1;
+    --dark-color-four: #f4f8f1;
+    --dark-color-five: #f4f8f1;
+}
+
+.color-light-one { color: var(--light-color-one) }
+.color-light-two { color: var(--light-color-two) }
+.color-light-three { color: var(--light-color-three) }
+.color-light-four { color: var(--light-color-four) }
+.color-light-five { color: var(--light-color-five) }
+
+.bgcolor-light-one { background-color: var(--light-color-one) }
+.bgcolor-light-two { background-color: var(--light-color-two) }
+.bgcolor-light-three { background-color: var(--light-color-three) }
+.bgcolor-light-four { background-color: var(--light-color-four) }
+.bgcolor-light-five { background-color: var(--light-color-five) }
+
+.color-dark-one { color: var(--dark-color-one) }
+.color-dark-two { color: var(--dark-color-two) }
+.color-dark-three { color: var(--dark-color-three) }
+.color-dark-four { color: var(--dark-color-four) }
+.color-dark-five { color: var(--dark-color-five) }
+
+.bgcolor-dark-one { background-color: var(--dark-color-one) }
+.bgcolor-dark-two { background-color: var(--dark-color-two) }
+.bgcolor-dark-three { background-color: var(--dark-color-three) }
+.bgcolor-dark-four { background-color: var(--dark-color-four) }
+.bgcolor-dark-five { background-color: var(--dark-color-five) }
+
+.color-switcher {
+    display: inline-block;
+}
+.color-switcher span {
+    font-size: 1rem;
+
+}
+.color-switcher {
+    height: 30px;
+    width: 58px;
+    position: relative;
+    border-radius: 1rem;
+    border: 3px solid var(--themeSwitcher-border-color);
+    overflow: hidden;
+    background-color: var(--themeSwitcher-bg-color);
+}
+
+.color-toggle {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--themeSwitcher-marker-color);
+    border-radius: 50%;
+    top: 2px;
+    transition: all ease-in-out 0.15s;
+}
+.color-toggle.left {
+    left: 2px;
+}
+.color-toggle.right {
+    left: 2px;
+    transform: translateX(29px);
+}

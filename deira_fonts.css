@@ -1,54 +1,54 @@
 :root {
-  --default-font-size: 1em;
-  /*
-      A default of 1em will, in most cases, give us a result of 16px, the default size of most browsers.
-      It will also allow our users to provide their own preference as, if they choose a larger font in their 
-      browser, 1em will adjust to that font size.
+    --default-font-size: 1em;
+    /*
+        A default of 1em will, in most cases, give us a result of 16px, the default size of most browsers.
+        It will also allow our users to provide their own preference as, if they choose a larger font in their 
+        browser, 1em will adjust to that font size.
 
-      This is placed into the HTML and is part of a calc function with the --font-growth-rate
-  */
-  --font-growth-rate: 0vw;
-  /*
-      The font growth rate is added to the default font size. When you use a value such as VW or VH then 
-      you will have a fluid growth. If you used 0.285vw, for example, you would have a growth of .9px at 
-      320px screen width up to 10px at 1400px screen width.
-  */
-  --font-family: 'Ubuntu', sans-serif;
+        This is placed into the HTML and is part of a calc function with the --font-growth-rate
+    */
+    --font-growth-rate: 0vw;
+    /*
+        The font growth rate is added to the default font size. When you use a value such as VW or VH then 
+        you will have a fluid growth. If you used 0.285vw, for example, you would have a growth of .9px at 
+        320px screen width up to 10px at 1400px screen width.
+    */
+    --font-family: 'Ubuntu', sans-serif;
 
-  --h1-font-size: 2rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --h4-font-size: 1.25rem;
-  --h5-font-size: 1.25rem;
-  --h6-font-size: 1.25rem;
-  --p-font-size: 1rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1.25rem;
+    --h5-font-size: 1.25rem;
+    --h6-font-size: 1.25rem;
+    --p-font-size: 1rem;
 
-  --h1-growth-rate: 0vw;
-  --h2-growth-rate: 0vw;
-  --h3-growth-rate: 0vw;
-  --h4-growth-rate: 0vw;
-  --h5-growth-rate: 0vw;
-  --h6-growth-rate: 0vw;
-  --p-growth-rate: 0vw;
+    --h1-growth-rate: 0vw;
+    --h2-growth-rate: 0vw;
+    --h3-growth-rate: 0vw;
+    --h4-growth-rate: 0vw;
+    --h5-growth-rate: 0vw;
+    --h6-growth-rate: 0vw;
+    --p-growth-rate: 0vw;
 
-  --extra-large: 4px;
-  --large: 2px;
-  --small: 2px;
-  --extra-small: 4px;
+    --extra-large: 4px;
+    --large: 2px;
+    --small: 2px;
+    --extra-small: 4px;
 
-  --h1-margin: 0.5rem auto 1rem auto;
-  --h2-margin: 0.5rem auto 1rem auto;
-  --h3-margin: 0 0 10px 0;
-  --h4-margin: 0 0 10px 0;
-  --h5-margin: 0 0 10px 0;
-  --h6-margin: 0 0 10px 0;
-  --p-margin: 0 0 10px 0;
+    --h1-margin: 0.5rem auto 1rem auto;
+    --h2-margin: 0.5rem auto 1rem auto;
+    --h3-margin: 0 0 10px 0;
+    --h4-margin: 0 0 10px 0;
+    --h5-margin: 0 0 10px 0;
+    --h6-margin: 0 0 10px 0;
+    --p-margin: 0 0 10px 0;
 
-  /* Custom Classes */
-  --content-font-size: 1rem;
-  --content-font-weight: 500;
-  --content-margin: 0 0 0 0;
-  --content-padding: 0 0 0 0;
+    /* Custom Classes */
+    --content-font-size: 1rem;
+    --content-font-weight: 500;
+    --content-margin: 0 0 0 0;
+    --content-padding: 0 0 0 0;
 }
 /* Setting up the default font size */
 html {  font-size: calc(var(--default-font-size) + var(--font-growth-rate));  }
@@ -108,12 +108,11 @@ p {  margin: var(--p-margin);  }
 .fontWeight-500, .normal {  font-weight: 500;  }
 .fontWeight-600 {  font-weight: 600;  }
 .fontWeight-700, .bold {  font-weight: 700;  }
-.fontWeight-800, .bold {  font-weight: 800;  }
-
+.fontWeight-800 {  font-weight: 800;  }
 /* Custom Class Setup */
 .content {
-  font-size: var(--content-font-size);
-  font-weight: var(--content-font-weight);
-  margin: var(--content-margin);
-  padding: var(--content-padding);
+    font-size: var(--content-font-size);
+    font-weight: var(--content-font-weight);
+    margin: var(--content-margin);
+    padding: var(--content-padding);
 }
