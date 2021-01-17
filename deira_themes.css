@@ -1,8 +1,19 @@
 :root {
+    /* Button Sizes */
+    --themeContainer-height: 2rem;
+    --themeContainer-width: 3.5rem;
+    --themeContainer-borderRadius: 1rem;
+    --themeBtn-toggle-size: 1.75rem;
+    --themeSwitcher-borderWidth: 3px;
+
     /* Button Colors */
     --themeSwitcher-border-color: #434546;
-    --themeSwitcher-bg-color: gainsboro;
-    --themeSwitcher-marker-color: red;
+    --themeSwitcher-bg-color: #d5e4c8;
+    --themeSwitcher-marker-color: #ff4d00;
+
+    /* Transition */
+    --transition-method: ease-in-out;
+    --transition-timer: 0.2s;
 
     /* Light Mode Colours */
     --light-color-one: #000;
@@ -17,6 +28,16 @@
     --dark-color-three: #f4f8f1;
     --dark-color-four: #f4f8f1;
     --dark-color-five: #f4f8f1;
+}
+
+.color-light-one, .color-light-two, .color-light-three,
+.color-light-four, .color-light-five, .bgcolor-light-one,
+.bgcolor-light-two, .bgcolor-light-three, .bgcolor-light-four,
+.bgcolor-light-five, .color-dark-one, .color-dark-two,
+.color-dark-three, .color-dark-four, .color-dark-five,
+.bgcolor-dark-one, .bgcolor-dark-two, .bgcolor-dark-three,
+.bgcolor-dark-four, .bgcolor-dark-five {
+    transition: color var(--transition-method) var(--transition-timer);
 }
 
 .color-light-one { color: var(--light-color-one) }
@@ -51,21 +72,21 @@
 
 }
 .color-switcher {
-    height: 30px;
-    width: 58px;
+    height: var(--themeContainer-height);
+    width: var(--themeContainer-width);
     position: relative;
-    border-radius: 1rem;
-    border: 3px solid var(--themeSwitcher-border-color);
+    border-radius: var(--themeContainer-borderRadius);
+    border: var(--themeSwitcher-borderWidth) solid var(--themeSwitcher-border-color);
     overflow: hidden;
     background-color: var(--themeSwitcher-bg-color);
 }
 
 .color-toggle {
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: var(--themeBtn-toggle-size);
+    height: var(--themeBtn-toggle-size);
     background: var(--themeSwitcher-marker-color);
-    border-radius: 50%;
+    border-radius: var(--themeContainer-borderRadius);
     top: 2px;
     transition: all ease-in-out 0.15s;
 }
@@ -74,5 +95,5 @@
 }
 .color-toggle.right {
     left: 2px;
-    transform: translateX(29px);
+    transform: translateX(1.45rem);
 }

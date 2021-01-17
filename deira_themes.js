@@ -16,8 +16,6 @@ const themeSwitcher = {
         themeSwitcher.opposite = 'dark';
       }
     },
-    classColor: (theme, num) => { return `.color-${theme}-${themeSwitcher.numbers[num]}` },
-    classBgColor: (theme, num) => { return `.bgcolor-${theme}-${themeSwitcher.numbers[num]}` },
     numbers: ['one', 'two', 'three', 'four', 'five'],
     changeColor: () => {
       for (let i = 0; i < 5; i++) {
